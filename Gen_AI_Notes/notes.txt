@@ -1,0 +1,337 @@
+GENERATIVE AI – COMPLETE NOTES
+1.1 Introduction
+Why This Course?
+1. Hands-On Learning
+- Focuses on building real-world projects.
+- Provides practical knowledge of Generative AI.
+2. Career-Focused
+- Teaches industry-relevant skills.
+- Helps prepare for AI-related career opportunities.
+3. Future-Ready
+- Introduces modern and advanced AI tools.
+- Helps understand emerging AI technologies.
+What Will You Build?
+1. Chatbot: A conversational AI application that interacts with users.
+2. RAG: Retrieval-Augmented Generation system.
+3. Capstone Project: A real-world project combining multiple concepts.
+4. AI Agents: Autonomous systems that can perform tasks.
+5. Deployment: Deploy AI applications using Docker, AWS and FastAPI.
+6. MCP: Model Context Protocol.
+
+1.2 What You Will Learn
+Course Roadmap
+The course is divided into 10 major topics.
+
+1. Introduction
+- Course overview.
+- Understanding the course structure.
+2. GenAI Foundations
+- Core concepts of Generative AI.
+- Basic theory of GenAI.
+3. LLMs in Python
+- Understanding Large Language Models.
+- Implementing LLMs using Python.
+4. Prompt Engineering
+- Learning how to write effective prompts.
+- Mastering prompt techniques.
+5. GenAI Chatbots
+- Building conversational AI applications.
+- Creating AI-powered chatbots.
+6. RAG (Retrieval-Augmented Generation)
+- Understanding retrieval-based systems.
+- Connecting external knowledge with LLMs.
+7. AI Agents
+- Understanding autonomous AI systems.
+- Building AI agents.
+8. LLM Deployment
+- Deploying LLM applications.
+- Working with production environments.
+9. MCP (Model Context Protocol)
+- Understanding Model Context Protocol.
+- Connecting AI models with external tools and context.
+10. Capstone Projects
+- Building real-world AI applications.
+- Applying all learned concepts.
+
+1.3 Environment Setup – Python, IDEs & Development Tools
+1. Python
+- Python is a high-level programming language.
+- It is widely used in Artificial Intelligence, Machine Learning, Data Science and Generative AI.
+- It provides libraries and frameworks for AI development.
+2. JupyterLab
+- JupyterLab is an interactive development environment.
+- It allows us to write and execute Python code in cells.
+- It is useful for experiments and data analysis.
+3. Google Colab
+- Google Colab is a cloud-based Python notebook environment.
+- It allows us to run Python code through a browser.
+- It can provide access to GPU resources.
+4. PyCharm
+- PyCharm is an IDE (Integrated Development Environment).
+- It is mainly used for Python development.
+- It provides code completion, debugging and project management.
+5. Visual Studio Code (VS Code)
+- VS Code is a lightweight code editor.
+- It supports Python and multiple programming languages.
+- It provides extensions for development.
+6. Docker
+- Docker is a platform used to create and run containers.
+- Containers package applications with their dependencies.
+- It helps maintain consistency across different environments.
+7. AWS EC2
+- EC2 stands for Elastic Compute Cloud.
+- It is a cloud computing service provided by AWS.
+- It provides virtual servers to run applications.
+
+2.1 AI vs ML vs DL vs Generative AI
+1. Artificial Intelligence (AI)
+Definition: Artificial Intelligence is the science of making machines act smart like humans.
+
+Examples:
+- Siri
+- Alexa
+- Chess Bot
+Applications:
+- Virtual assistants
+- Robotics
+- Smart systems
+2. Machine Learning (ML)
+Definition: Machine Learning is a subset of AI that learns patterns from data to make predictions.
+
+Examples:
+- Email Spam Filter
+- Netflix Recommendations
+- Credit Card Fraud Detection
+Applications:
+- Prediction
+- Classification
+- Recommendation systems
+3. Deep Learning (DL)
+Definition: Deep Learning is a subset of Machine Learning that uses multi-layered neural networks to solve complex problems.
+
+Examples:
+- Face ID Unlock
+- Speech-to-Text
+- Image Classification
+Applications:
+- Image recognition
+- Speech recognition
+- Natural Language Processing
+4. Generative AI (GenAI)
+Definition: Generative AI is a type of AI that creates new content such as text, images, audio and music.
+
+Examples:
+- ChatGPT
+- GitHub Copilot
+- DALL-E
+Applications:
+- Text generation
+- Image generation
+- Code generation
+- AI chatbots
+Difference Between AI, ML, DL and GenAI
+Technology	Meaning
+AI	Makes machines intelligent
+ML	Learns patterns from data
+DL	Uses deep neural networks
+GenAI	Generates new content
+
+Relationship
+AI → ML → DL
+
+Generative AI is a field of AI that focuses on generating new content.
+
+2.2 Large Language Models (LLMs)
+1. What is an LLM?
+Definition: A Large Language Model (LLM) is a type of AI model trained to understand and generate human-like text.
+
+LLMs are used in:
+- Chatbots
+- Document Question Answering
+- Coding
+- AI Agents
+2. Popular LLMs
+1. GPT-5
+2. Gemini 2.5
+3. Llama 4
+4. DeepSeek
+3. What Makes an LLM Large?
+An LLM is called large because it contains a huge number of parameters.
+
+Parameters:
+- Parameters are numerical values learned by a model during training.
+- They help the model understand patterns in data.
+- More parameters can improve model capabilities but require more computational resources.
+Example:
+
+GPT-3 has 175 billion (175B) parameters.
+4. LLM Workflow
+The LLM workflow contains five main steps.
+
+Step 1: Input Text
+- Raw text enters the system.
+- Example: "What is Artificial Intelligence?"
+Step 2: Tokenization
+- Text is converted into smaller units called tokens.
+- Tokens are converted into numerical IDs.
+Step 3: Neural Network
+- The Transformer processes relationships between tokens.
+- It understands contextual information.
+Step 4: Output Tokens
+- The model predicts the next token sequences.
+- It generates output tokens.
+Step 5: Output Text
+- Generated tokens are converted into readable text.
+- The final response is displayed to the user.
+5. Tokenization
+Definition: Tokenization is the process of breaking text into smaller units called tokens.
+
+Tokens can be:
+1. Words
+2. Subwords
+3. Characters
+Example:
+
+Sentence: "ChatGPT is amazing!"
+
+Possible tokens:
+- Chat
+- G
+- PT
+- is
+- amazing
+- !
+Advantages of Tokenization:
+1. Breaks text into smaller units.
+2. Converts tokens into numerical IDs.
+3. Helps process unfamiliar words.
+4. Reduces vocabulary size.
+5. Helps LLMs process language efficiently.
+Note: Actual token splitting depends on the model and tokenizer.
+6. Proprietary vs Open-Source LLMs
+Proprietary LLMs
+- OpenAI – GPT models
+- Google – Gemini
+- Anthropic – Claude
+Meaning: Proprietary models are controlled by their respective organizations and may have restricted access to their underlying model weights.
+Open-Source LLMs
+- Meta – Llama
+- Google – Gemma
+- OpenAI – GPT-oss
+- DeepSeek
+Meaning: Open models provide access to model weights or other resources under their respective licenses.
+
+2.3 Transformer Architecture
+1. What is a Transformer?
+Definition: Transformer is a deep learning architecture used to process and understand sequential data, especially text.
+
+Important Points:
+1. Processes entire sentences at once rather than word by word.
+2. Uses Self-Attention Mechanism.
+3. Understands relationships between words.
+4. Helps in translation and text generation.
+5. Introduced in the research paper "Attention Is All You Need" in 2017.
+2. Core Transformer Architecture
+Transformer architecture has two main components:
+1. Encoder
+2. Decoder
+A. Encoder
+Definition: The encoder converts input text into contextual embeddings.
+
+Functions:
+1. Processes input text.
+2. Understands the context of words.
+3. Uses Self-Attention.
+4. Uses Feed-Forward Neural Networks.
+5. Captures information from the complete input context.
+B. Decoder
+Definition: The decoder generates output sequences step by step.
+
+Functions:
+1. Generates output tokens one by one.
+2. Uses Masked Self-Attention.
+3. Prevents access to future tokens.
+4. Uses Cross-Attention to integrate encoder information.
+3. Self-Attention Mechanism
+Definition: Self-Attention is a mechanism that helps a model understand the importance of each word in relation to other words in a sentence.
+
+It helps the model understand the context and relationships between words.
+Query, Key and Value (Q, K, V)
+Self-Attention uses three important vectors:
+
+1. Query (Q)
+
+- Represents what information a token is looking for.
+
+2. Key (K)
+
+- Represents the information available from other tokens.
+
+3. Value (V)
+
+- Contains the information that is used to create the final contextual representation.
+Attention Computation
+The process works in three main steps:
+1. Calculate similarity between Query and Key.
+2. Apply Softmax to normalize attention scores.
+3. Multiply attention weights with Value vectors.
+Result: The model generates context-aware representations.
+4. Positional Encoding
+Definition: Positional Encoding is used to provide information about the position or order of words in a sentence.
+
+Why is it needed?
+- Transformers process all words together.
+- They need information about word order.
+- Positional Encoding adds position information to word embeddings.
+Important Points:
+1. Provides position information.
+2. Helps understand word order.
+3. Uses sine and cosine patterns in the original approach.
+4. Combines word meaning with position information.
+5. Transformer Training Process
+Transformer models are trained in two major stages.
+A. Pre-training
+- The model is trained on huge amounts of text data.
+- It learns grammar, meaning and language patterns.
+- It uses self-supervised learning.
+B. Fine-tuning
+- The pre-trained model is adjusted for specific tasks.
+- It improves performance for particular applications.
+Training Methods mentioned in the slides:
+1. Masked Language Modeling – Filling in missing words.
+2. Next Sentence Prediction – Predicting the next sentence.
+
+QUICK REVISION NOTES
+Term	Important Meaning
+AI	Making machines intelligent
+ML	Learning patterns from data
+DL	Multi-layered neural networks
+GenAI	Creating new content
+LLM	Large Language Model
+Tokenization	Breaking text into tokens
+Transformer	Deep learning architecture
+Encoder	Processes input
+Decoder	Generates output
+Self-Attention	Understands word relationships
+QKV	Query, Key and Value
+Positional Encoding	Provides word position
+Pre-training	Initial model training
+Fine-tuning	Adapting a model for a task
+RAG	Retrieval-Augmented Generation
+MCP	Model Context Protocol
+
+Important workflows to remember:
+
+LLM Workflow:
+
+Input Text → Tokenization → Neural Network → Output Tokens → Output Text
+
+Transformer Components:
+
+Transformer → Encoder + Decoder
+
+AI Relationship:
+
+AI → ML → DL
+
+GenAI: Focuses on generating new content.
