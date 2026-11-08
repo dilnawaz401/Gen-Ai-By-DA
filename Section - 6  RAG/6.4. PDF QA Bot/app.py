@@ -8,7 +8,7 @@ from rag_utility import process_document_to_chroma_db, answer_question
 # set the working directory
 working_dir = os.path.dirname(os.path.abspath((__file__)))
 
-st.title("🦙 Llama-3.3-70B - Document RAG")
+st.title(" openai/gpt-oss-20b - Document RAG")
 
 # file uploader widget
 uploaded_file = st.file_uploader("Upload a PDF file", type=["pdf"])
@@ -30,5 +30,5 @@ if st.button("Answer"):
 
     answer = answer_question(user_question)
 
-    st.markdown("### Llama-3.3-70B Response")
+    st.markdown("### openai/gpt-oss-20b Response")
     st.markdown(answer)
